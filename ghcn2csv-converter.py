@@ -76,9 +76,9 @@ def convert_ghcn_daily(input, output):
            	if v != '':
 			v = int(v)
 		row.append(v) # valueN
-		row.append(line[base_idx+5:base_idx+6].strip()) # dmflagN
-		row.append(line[base_idx+6:base_idx+7].strip()) # qcflagN
-		row.append(line[base_idx+7:base_idx+8].strip()) # dsflagN
+		row.append(line[base_idx+5:base_idx+6].strip()) # mflagN
+		row.append(line[base_idx+6:base_idx+7].strip()) # qflagN
+		row.append(line[base_idx+7:base_idx+8].strip()) # sflagN
 	csv_output.writerow(row)
     output.close()
 
